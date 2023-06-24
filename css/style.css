@@ -1,0 +1,1322 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ; /*border/padding includes in div not adds on it*/
+}
+
+.header {
+    width: 100% ;
+    height: 55px ;
+    background-color: grey ;
+    position: fixed ;
+    top: 0 ;
+    left : 0 ;
+    opacity: 0.7 ;
+    z-index: 1 ;
+}
+.logo {
+    width: 55px;
+    height: 55px;
+    margin-left: 20px;
+}
+.section1-content{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section1-p1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.section1-p2 {
+    line-height: 30px;
+}
+
+
+
+.listh {
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+    
+}
+    .listh li {
+        display: inline-block;
+        margin-left: 15px;
+        text-transform: capitalize;
+        font-weight: 800;
+        position: relative ;
+        height: 20px ;
+        
+    }
+.listh li a {
+        text-decoration: none;
+        color : black ;
+
+
+ }
+.listh li:hover{
+    
+    text-decoration: underline ;
+    
+}
+ .listh li::after {
+     content: "" ;
+     position: absolute ;
+     width: 0 ;
+     height :5px ;
+     background-color: blue;
+     bottom : 0 ;
+     left: 0 ;
+     transition :1s ;
+     
+     
+     
+
+ }
+ .listh li:hover::after {
+   width: 100% ;
+ }
+body {
+    background-color: lightgray;
+}
+.section1-parent {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/ddd.jpg);
+    
+
+}
+
+.section1-parentoverlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.section1-parentbtn {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 100px;
+    height: 50px;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.section1-parentbtn:hover {
+        opacity: 0.7;
+}
+.btn2{
+    background-color: blue ;
+}
+.section2 {
+    height: 100vh;
+    position: relative;
+}
+.section2-header-parent {
+    width: 100%;
+    height: 50% ;
+    position: relative;
+}
+
+.section2-header {
+    position: absolute;
+    top: 55% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.section2-header-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size:35px;
+    padding-top: 20%;
+    
+    
+    
+}
+.section2-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 7px auto;
+    
+}
+
+.section2-content {
+        width: 81%;
+        height: 30%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-50%);
+        /*  background-color:lightblue ;*/
+}
+
+
+.section2-contentdiv {
+    width: 30%;
+    height: 100%;
+    border: 2px solid grey;
+    text-align: center;
+    float: left;
+    
+    position: relative;
+   
+    
+}
+
+.section2-contentdiv2 {
+    margin-left: 5%;
+
+}
+.section2-contentdiv3 {
+    margin-left: 5%;
+}
+.section2-contentdiv::after {
+    width:0 ;
+    height: 0 ;
+    content:"";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transition: 1s ;
+}
+.section2-contentdiv:hover::after {
+    
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+.section2-c {
+    position: absolute;
+    z-index: 1;
+    padding: 11% ;
+    
+}
+.section2-contenta {
+   line-height:60px ;
+    text-decoration: none;
+    color: blue;
+    text-transform: capitalize;
+}
+
+.section2-contenttitle {
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top:10px;
+}
+
+
+.section2-contentdiv:hover .section2-contenttitle {
+    color:white;
+    transition: 0.5s;
+}
+.section2-contenti {
+    font-size: 30px ;
+    color: blue;
+    
+}
+.clearfix {
+    clear: both;
+}
+/*....................................*/
+.section3 {
+    height: 100vh;
+    position: relative;
+}
+
+
+.section3-header-parent {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    /*background-color: red;*/
+}
+
+.section3-header {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.section3-header-title {
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+
+.section3-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 7px auto;
+}
+.section3-content {
+    width: 81%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    /*background-color: green ;*/
+    
+}
+
+
+
+
+
+.section3-contentdivup {
+    width: 27%;
+    height: 40%;
+    border: 2px solid grey;
+    float: left;
+    padding: 0%;
+    background-image: url(../images/prod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1%;
+    position: relative;
+}
+.section3-contentdiv1{
+    margin-left: 1%;
+}
+
+
+.section3-contentdiv2 {
+    margin-left: 9%;
+}
+
+.section3-contentdiv3 {
+    margin-left: 8%;
+}
+
+.section3-contentdivdn {
+    width: 27%;
+    height: 40%;
+    border: 2px solid grey;
+    float: left;
+    padding: 0%;
+    margin-top: 6.5%;
+    background-image: url(../images/prod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.section3-contentdivhover {
+    text-align: center;
+    padding: 0 15%;
+    bottom: 15px ;
+    z-index: 2;
+    position: absolute;
+    margin-left: 10%;
+    transition: 1s;
+}
+
+
+.section3-hover-title{
+    color: blue ;
+    font-size: 40px ;
+    line-height: 40px ;
+    /*font-family:;*/
+    text-transform: capitalize ;
+}
+.section3-hover {
+    font-size: 20px;
+    line-height: 40px;
+    /*font-family:;*/
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold ;
+    
+}
+
+.section3-contenti {
+    font-size: 20px;
+    line-height: 40px;
+    color: blue;
+    background-color: lightblue;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+
+.section3-bg-hover {
+    visibility: hidden;
+    opacity: 0;
+    background-color:black ;
+    transition: 1s ;
+    width: 110% ;
+    height: 110% ;
+   top:0 ;
+   left:0 ;
+   position:absolute ;
+   margin:-3% -5% 0% -5%;
+   
+}
+
+
+
+.section3-contentdivhover:hover {
+    bottom: 30px
+}
+
+
+
+.section3-contentdivup:hover .section3-bg-hover {
+    visibility: visible;
+    opacity: 0.5;
+}
+.section3-contentdivdn:hover .section3-bg-hover {
+    visibility: visible;
+    opacity: 0.5;
+}
+.section3-hover-title {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.section3-contentdivup:hover .section3-hover-title {
+    transition-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.section3-contentdivdn:hover .section3-hover-title {
+    transition-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+}
+.section3-hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.section3-contentdivup:hover .section3-hover {
+    transition-delay: 0.4s;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.section3-contentdivdn:hover .section3-hover {
+    transition-delay: 0.4s;
+    visibility: visible;
+    opacity: 1;
+}
+.section3-contenti {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+.section3-contentdivup:hover .section3-contenti {
+    transition-delay: 0.6s;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.section3-contentdivdn:hover .section3-contenti {
+    transition-delay: 0.6s;
+    visibility: visible;
+    opacity: 1;
+}
+/*.........................................................................*/
+.section4 {
+    height: 100vh;
+    position: relative;
+}
+
+
+.section4-header-parent {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    /*background-color: red;*/
+}
+
+.section4-header {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.section4-header-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px ;
+}
+
+.section4-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 7px auto;
+}
+.section4-contentdivup {
+    width: 30%;
+    height: 45%;
+    border: 2px solid grey;
+    float: left;
+    padding: 2.5%;
+    text-align:left;
+    position: relative;
+}
+
+
+
+
+.section4-contentdiv2 {
+    margin-left: 5%;
+}
+
+.section4-contentdiv3 {
+    margin-left:5%;
+}
+
+.section4-contentdivdn {
+    width: 30%;
+    height: 45%;
+    border: 2px solid grey;
+    float: left;
+    padding: 2.5%;
+    margin-top: 3%;
+    position: relative;
+    text-align: left;
+}
+
+.section4-content {
+    width: 81%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    /*background-color: green ;*/
+    
+}
+
+
+.section4-hover-title {
+    color: blue;
+    font-size: 30px;
+    line-height: 40px;
+    /*font-family:;*/
+    text-transform: capitalize;
+    padding-left: 15% ;
+}
+
+.section4-hover {
+    font-size: 15px;
+    line-height: 25px;
+    /*font-family:;*/
+    text-transform: capitalize;
+    color: grey;
+    font-weight: bold;
+    padding: 0% 15% ;
+}
+
+.section4-contenti {
+    font-size: 25px;
+    color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 3%;
+    /*background-color:antiquewhite;*/
+}
+
+.section4-contentdivup::after {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transition: 1s;
+    background-color:black ;
+    opacity: 0.7 ;
+}
+.section4-contentdivup:hover::after {
+    width: 100%;
+    height: 100%;
+    
+    transition: 0.5s;
+}
+.section4-c{
+    position:absolute;
+     z-index: 1 ;
+     
+     
+}
+.section4-contentdivup:hover .section4-hover-title {
+    color: white;
+    transition: 1s ;
+}
+.section4-contentdivdn::after {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transition: 1s;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.section4-contentdivdn:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.section4-contentdivdn:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.section4-contentdivdn:hover .section4-hover-title {
+    color: white;
+    transition: 1s;
+}
+/*........................................*/
+.section5 {
+    height: 100vh;
+    position: relative;
+    overflow: auto ;
+}
+
+
+
+
+
+.section5-header-parent {
+    width: 100%;
+    height: 40%;
+    position: relative;
+   /* background-color: red;*/
+}
+
+.section5-header {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    
+    /*background-color: red;*/
+}
+    
+
+
+
+.section5-header-title {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section5-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 7px auto;
+}
+.section5-contentdivrt {
+    width: 50%;
+    height: 60%;
+    position: relative;
+    /*background-color: red;*/
+   
+    text-transform: capitalize;
+    float: left;
+}
+   
+
+.section5-intro {
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.section5-p{
+    margin-left: 25% ;
+    margin-top:2% ;
+}
+.section5-icons {
+   margin-left: 20%;
+    margin-top: -14%;
+    width: 2%;
+    height: 30%;
+   /* background-color: red ;*/
+   color: blue ;
+}
+.section5-contenti {
+    margin-top: 100%;
+    font-size: 20px;
+}
+.section5p{
+    margin-top: 6% ;
+}
+.section5-contentdivlft {
+    width: 50%;
+    height: 40%;
+   /* background-color: blue;*/
+    float: right;
+    margin-top: -4%
+   
+    
+   
+}
+.section5-img {
+    padding-left:16% ;
+    width: 80%;
+    height: 100%;
+    /*padding-top: 5%;*/
+}
+.section5-circles {
+    float: right;
+    width: 50%;
+    height: 20%;
+    float: right;
+   /* background-color: blue;*/
+    padding-right: 25%;
+    padding-top: 1% ;
+}
+.section5-circle {
+    border: 10px;
+    border-radius: 100%;
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-left: 5px;
+    
+}
+.s5c3{
+    background-color: cornflowerblue ;
+}
+.section5-circle:hover {
+    background-color: cornflowerblue;
+}
+/*.........................*/
+.section6 {
+    height: 100vh;
+    position: relative;
+    overflow:auto ;
+   
+}
+.section6-image {
+    width: 100%;
+    height: 50% ;
+    margin-bottom: 20% ;
+    background-image: url(../images/buildings.jpg);
+    background-attachment: fixed;
+    position:absolute;
+    top:25%;
+   
+}
+.section6-overlay {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20%;
+    background-color: black;
+    /*background-attachment: fixed;*/
+    position: absolute;
+    top: 25%;
+    opacity: 0.5;
+    z-index: 1;
+}
+.section6-c1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 8%;
+    height: 20%;
+    /*background-color: blue;*/
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    z-index: 2;
+}
+.section6-contenti {
+    font-size: 25px;
+    color: blue;
+}
+.section6-p1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 6%;
+}
+.section6-c2 {
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 8%;
+    height: 20%;
+    /*background-color: blue;*/
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    z-index: 2;
+}
+.section6-c3 {
+    position: absolute;
+    top: 40%;
+    right: 38%;
+    width: 8%;
+    height: 20%;
+    /*background-color: blue;*/
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    z-index: 2;
+}
+.section6-c4 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    width: 8%;
+    height: 20%;
+    /* background-color: blue;*/
+    text-align: center;
+    padding-top: 2%;
+    color: white;
+    z-index: 2;
+}
+/*.....................................*/
+.section7 {
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+}
+.section5-header-parent {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    /* background-color: red;*/
+    
+}
+
+.section7-header {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background-color: red;*/
+}
+
+
+
+
+.section7-header-title {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section7-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 7px auto;
+}
+.section7-maincontent{
+    width:80% ;
+    height: 60%;
+    /*background-color: red ;*/
+    position: relative;
+    top:30% ;
+    left:10%;
+    
+}
+.section7-div-title {
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 100;
+}
+.section7-price {
+    font-size: 50px;
+    margin-top: 25px
+}
+
+.section7-div {
+    width: 25%;
+    height: 100%;
+    border: 2px solid grey;
+    text-align: center;
+    padding-top: 3%;
+    position:relative;
+}
+
+.section7-month {
+    padding-top: -40px;
+}
+
+.section7-p {
+    color: gray;
+    line-height: 30px;
+    font-size: 20px ;
+    padding-top: 5% ;
+}
+
+.section7-button {
+    border-color: blue;
+    width: 50% ;
+    height: 10% ;
+    margin-top:13%;
+
+}
+
+.section7-circle1 {
+    width: 120px;
+    height: 120px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.section7-div-content {
+    margin: auto;
+    margin-top: 3%;
+}
+.s7div1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+   
+}
+.s7div2 {
+    position: absolute;
+    left: 37%;
+}
+.s7div3 {
+    right: 0%;
+    position: absolute;
+}
+.section7-div::after  {
+    
+    transition: 0.5s ;
+    content:"";
+    background-color: black ;
+    opacity: 0 ;
+    position:absolute ;
+    top:0 ;
+    left:0 ;
+    width:100% ;
+    height: 0%
+}
+.section7-div:hover::after {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%
+}
+.section7-div:hover .section7-price {
+    color: red;
+    transition: 0.5s;
+}
+.section7-div:hover .section7-month {
+    color: red;
+    transition: 0.5s;
+}
+.section7-div:hover .section7-div-title {
+    color: red;
+    transition: 0.5s;
+}
+/*...................*/
+
+.section8 {
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+}
+
+.section8-image {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20%;
+    background-image: url(../images/buildings.jpg);
+    background-attachment: fixed;
+    position: absolute;
+    top: 25%;
+}
+
+.section8-overlay {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20%;
+    background-color: black;
+    /*background-attachment: fixed;*/
+    position: absolute;
+    top: 25%;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.section8-c1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 20%;
+    height: 20%;
+    /*background-color: blue;*/
+    text-align: left;
+   
+    padding-top: 2%;
+    color: white;
+    z-index: 2;
+}
+
+
+
+
+
+.section8-c2 {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 20%;
+    height: 20%;
+    /*background-color: blue;*/
+    text-align: left;
+    padding-top: 2%;
+    color: white;
+    z-index: 2;
+}
+.section8-img {
+    width: 50px;
+    height: 50px;
+    border: 3px;
+    border-radius: 100%;
+    background-color: grey;
+    background-image: url(../images/person.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.section8-p1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 2%;
+    text-transform: capitalize;
+    padding-left: 20% ;
+}
+.section8-p2 {
+    font-size: 15px;
+    
+    text-transform: capitalize;
+    padding-left: 20%;
+}
+.section8-p3 {
+    font-size: 15px;
+    
+    padding-top: 5%;
+    text-transform: capitalize;
+    
+}
+/*...................................*/
+.section9 {
+    height: 100vh;
+    position: relative;
+}
+
+
+.section9-header-parent {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    /*background-color: red;*/
+}
+
+.section9-header {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.section9-header-title {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.section9-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: 7px auto;
+}
+/*.....*/
+.section9-container {
+    width: 80%;
+   /* height: 90%;*/
+   /* background-color: green;*/
+    margin: auto;
+    margin-top:5% ;
+    
+    
+}
+
+.section9-content{
+    overflow:auto;
+
+}
+.section9-item {
+    float: left;
+    width: 30%;
+    /*background-color: red;*/
+    padding: 1%;
+    text-align: center;
+    position: relative;
+}
+.s9div2{
+    margin:0 5% ;
+}
+.section9-image {
+    /*background-color: yellow;*/
+    width: 95%;
+    
+    margin:auto;
+    position: relative;
+}
+.s9img{
+    width:100% ;
+}
+.section9-overlayicons {
+    position: absolute;
+    top:0;
+    right:0;
+    /*background: rgba(0,0,225,0.5);*/
+    
+    visibility:hidden;
+    opacity:0;
+    z-index:1;
+}
+
+.section9-item:hover .section9-overlayicons {
+    visibility: visible;
+    opacity: 0.7;
+    transition: 1s ;
+}
+.section9-item::after {
+    content: "";
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:0%;
+    transition: 1s;
+    opacity: 0;
+}
+.section9-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    
+}
+.section9-overlayicons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: blue;
+}
+.section9-overlayicons a i {
+    line-height:40px; /*icon center itself automatic in height of parent*/
+    
+}
+.section9-content p {
+    
+    text-transform:capitalize;
+    padding:5px;
+    
+    
+}
+.section9-p1 {
+    font-size: 30px;
+    color: blue;
+}
+.section9-p2 {
+    font-size: 20px;
+    color: white;
+}
+/*......................................................*/
+.section10 {
+    height: 100vh;
+    position: relative;
+    text-decoration: underline;
+}
+
+
+.section10-header-parent {
+    width: 100%;
+    height: 22%;
+    position: absolute;
+    /*background-color: violet;*/
+}
+
+.section10-header {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.section10-header-title {
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 7px;
+    
+}
+
+.section10-header-line {
+    width: 80px;
+    height: 5px;
+    background-color: blue;
+    margin: auto;
+    
+}
+
+/*.....*/
+.section10-container {
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
+    height: 80%;
+    /*background-color: red;*/
+    margin-top:12%;
+}
+.section10-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height:100% ;
+   
+    background-color: darkgrey;
+    text-align: center;
+    float : left ;
+
+    
+}
+.section10-img{
+    width:60% ;
+    padding:4%;
+    height:60% ;
+    
+   
+
+}
+.section10-contenti{
+    color:blue;
+    line-height:10px;
+    font-size:10px;
+    
+    
+}
+.section10-span{
+    padding-right:10px;
+}
+.section10-p {
+    text-align: left;
+    padding: 4%;
+}
+.s6p1 {
+    font-size: 20px;
+    text-transform:capitalize;
+
+}
+.section10-a {
+    
+    text-decoration: none;
+    font-size: 20px;
+    color: blue ;
+    
+}
+.s10div2{
+    margin-left:35%;
+}
+.s10div3 {
+    margin-left: 70%;
+}
+.section10-div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+}
+.section10-div:hover::after {
+    width: 100%;
+    height:100%;
+    opacity:0.7 ;
+}
+/*....................................................*/
+.section-footer {
+    width: 100%;
+    
+    background-color: darkgrey;
+    position: relative;
+    text-align: center;  
+}
+.section-footer-img {
+    width: 15%;
+    height: 30%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section-F-span {
+    font-size: 15px;
+    color: lightgrey;
+    line-height: 50px;
+}
+.section-F-contenti {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: blue;
+    color: white;
+    padding: 17px;
+    margin-left: 3px;
+    margin-top: 8%;
+    position: relative;
+}
+.section-footer-container{
+   padding:5%;
+    
+}
+.section-F-contenti::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section-F-contenti:hover::after {
+    opacity: 0.5;
+    background-color: black;
+}
